@@ -1,0 +1,26 @@
+/* Book covers */
+.photos .cover {
+  cursor: pointer;
+
+  /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
+}
+
+.custom-photos {
+  height: 800px;
+}
+
+#photos-info {
+  position:		relative;
+  text-align:		center;
+  z-index:		1000;
+  text-shadow:	0 0 8px white;
+}
+
+#photos-name {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.clearfix {
+  clear: both;
+}

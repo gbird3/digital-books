@@ -1,8 +1,26 @@
 <%inherit file="base.htm" />
 
 <%block name="content">
-    <div class="content">
-      <h3>Congratulations -- you've successfully created a new django-mako-plus app!</h3>
-      <h4>Next Up: Go through the django-mako-plus tutorial and add Javascript, CSS, and urlparams to this page.</h4>
-    </div>
+
+		<h1 class="ui header">Digital Books</h1>
+		<div class="photos">
+			<img class="cover" data-name="Attic" src="${ STATIC_URL }homepage/media/demo/attic.jpg"/>
+			<img class="cover" data-name="Aurora Borealis" src="${ STATIC_URL }homepage/media/demo/aurora.jpg"/>
+			<img class="cover" data-name="Barbecued steak" src="${ STATIC_URL }homepage/media/demo/barbecue.jpg"/>
+			<img class="cover" data-name="Black swan" src="${ STATIC_URL }homepage/media/demo/blackswan.jpg"/>
+			<img class="cover" data-name="Chess" src="${ STATIC_URL }homepage/media/demo/chess.jpg"/>
+			<img class="cover" data-name="Fire" src="${ STATIC_URL }homepage/media/demo/fire.jpg"/>
+			<img class="cover" data-name="Keyboard" src="${ STATIC_URL }homepage/media/demo/keyboard.jpg"/>
+			<img class="cover" data-name="Locomotive" src="${ STATIC_URL }homepage/media/demo/locomotive.jpg"/>
+			<img class="cover" data-name="Novo-Diveevo monastery" src="${ STATIC_URL }homepage/media/demo/diveevo.jpg"/>
+			<img class="cover" data-name="Person" src="${ STATIC_URL }homepage/media/demo/person.jpg"/>
+			<img class="cover" data-name="Rose" src="${ STATIC_URL }homepage/media/demo/rose.jpg"/>
+			<img class="cover" data-name="Seagull" src="${ STATIC_URL }homepage/media/demo/seagull.jpg"/>
+			<img class="cover" data-name="Solar power" src="${ STATIC_URL }homepage/media/demo/solarpower.jpg"/>
+		</div>
+		<div id="photos-info">
+			<div id="photos-name"></div>
+		</div>
+
+
 </%block>

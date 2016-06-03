@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1464835309.0458598
+_modified_time = 1464931612.2245088
 _enable_loop = True
 _template_filename = 'C:/Users/gregb/repos/digital-books/digital_books/homepage/templates/index.html'
 _template_uri = 'index.html'
@@ -29,6 +29,7 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
+        STATIC_URL = context.get('STATIC_URL', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
         __M_writer = context.writer()
@@ -37,6 +38,7 @@ def render_body(context,**pageargs):
             context['self'].content(**pageargs)
         
 
+        __M_writer('\r\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
@@ -45,10 +47,37 @@ def render_body(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
+        STATIC_URL = context.get('STATIC_URL', UNDEFINED)
         def content():
             return render_content(context)
         __M_writer = context.writer()
-        __M_writer('\r\n    <div class="content">\r\n      <h3>Congratulations -- you\'ve successfully created a new django-mako-plus app!</h3>\r\n      <h4>Next Up: Go through the django-mako-plus tutorial and add Javascript, CSS, and urlparams to this page.</h4>\r\n    </div>\r\n')
+        __M_writer('\r\n\r\n\t\t<h1 class="ui header">Digital Books</h1>\r\n\t\t<div class="photos">\r\n\t\t\t<img class="cover" data-name="Attic" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/attic.jpg"/>\r\n\t\t\t<img class="cover" data-name="Aurora Borealis" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/aurora.jpg"/>\r\n\t\t\t<img class="cover" data-name="Barbecued steak" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/barbecue.jpg"/>\r\n\t\t\t<img class="cover" data-name="Black swan" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/blackswan.jpg"/>\r\n\t\t\t<img class="cover" data-name="Chess" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/chess.jpg"/>\r\n\t\t\t<img class="cover" data-name="Fire" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/fire.jpg"/>\r\n\t\t\t<img class="cover" data-name="Keyboard" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/keyboard.jpg"/>\r\n\t\t\t<img class="cover" data-name="Locomotive" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/locomotive.jpg"/>\r\n\t\t\t<img class="cover" data-name="Novo-Diveevo monastery" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/diveevo.jpg"/>\r\n\t\t\t<img class="cover" data-name="Person" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/person.jpg"/>\r\n\t\t\t<img class="cover" data-name="Rose" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/rose.jpg"/>\r\n\t\t\t<img class="cover" data-name="Seagull" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/seagull.jpg"/>\r\n\t\t\t<img class="cover" data-name="Solar power" src="')
+        __M_writer(str( STATIC_URL ))
+        __M_writer('homepage/media/demo/solarpower.jpg"/>\r\n\t\t</div>\r\n\t\t<div id="photos-info">\r\n\t\t\t<div id="photos-name"></div>\r\n\t\t</div>\r\n\r\n\r\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
@@ -56,6 +85,6 @@ def render_content(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "uri": "index.html", "filename": "C:/Users/gregb/repos/digital-books/digital_books/homepage/templates/index.html", "line_map": {"51": 3, "35": 1, "28": 0, "45": 3, "57": 51}}
+{"line_map": {"64": 11, "65": 12, "66": 12, "67": 13, "68": 13, "69": 14, "70": 14, "71": 15, "72": 15, "73": 16, "74": 16, "75": 17, "76": 17, "77": 18, "78": 18, "79": 19, "80": 19, "86": 80, "28": 0, "36": 1, "41": 26, "47": 3, "54": 3, "55": 7, "56": 7, "57": 8, "58": 8, "59": 9, "60": 9, "61": 10, "62": 10, "63": 11}, "filename": "C:/Users/gregb/repos/digital-books/digital_books/homepage/templates/index.html", "source_encoding": "utf-8", "uri": "index.html"}
 __M_END_METADATA
 """
