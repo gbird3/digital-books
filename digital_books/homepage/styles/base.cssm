@@ -1,0 +1,51 @@
+/*.navbar.transparent.navbar-default {
+   border-width: 0px;
+   -webkit-box-shadow: 0px 0px;
+   box-shadow: 0px 0px;
+   background-color: rgba(0,0,0,0.0);
+   background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+   background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+   background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+
+}*/
+
+#main-image {
+  background-image: url("${ STATIC_URL }homepage/media/images/books.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*#main_menu {
+  color: white;
+}*/
+
+/*.nav.navbar-nav.navbar-right a {
+  color: white;
+}
+/**/
+.nav.navbar-nav a {
+  font-size: 18px;
+}
+
+/*.nav.navbar-nav.navbar-left a {
+  color: white;
+  font-size: 18px;
+}*/
+#logo {
+  color: #01A2A6;
+  font-size: 30px;
+  margin-top: -5px;
+}
+
+.right {
+  position: absolute;
+  right: 190px;
+}
+
+.green-color {
+  color: #01A2A6;
+}
+
+.dark {
+  color: #B1FF7E;
+}

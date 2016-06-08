@@ -1,26 +1,24 @@
-/* Book covers */
-.photos .cover {
-  cursor: pointer;
-
-  /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
+.white {
+  color: white;
 }
 
-.custom-photos {
-  height: 800px;
-}
+.cover-book {
+  height: 75%;
 
-#photos-info {
-  position:		relative;
-  text-align:		center;
-  z-index:		1000;
-  text-shadow:	0 0 8px white;
-}
-
-#photos-name {
-  font-size: 200%;
-  font-weight: bold;
 }
 
 .clearfix {
   clear: both;
+}
+
+.space {
+  height: 25px;
+}
+
+#action-call {
+  font-size: 100px;
+}
+
+#action-btn {
+  text-align: center;
 }

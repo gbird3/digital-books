@@ -12,52 +12,57 @@
     <title><%block name="title">Digital Bookshelf</%block></title>
 
     ## add any site-wide scripts or CSS here; for example, jquery:
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
-
-		<!-- Optional: Reflection -->
-		<script type="text/javascript" src="${ STATIC_URL }homepage/media/reflection.js"></script>
-
-		<!-- interpolate, depends on jQ 1.8.0+ -->
-		<script src="${ STATIC_URL }homepage/media/jquery.interpolate.min.js"></script>
-
-		<!-- Coverflow -->
-		<script src="${ STATIC_URL }homepage/media/jquery.coverflow.js"></script>
-
-    <script src="${ STATIC_URL }homepage/media/jquery.touchSwipe.min.js"></script>
-    <script src="${ STATIC_URL }homepage/media/dist/semantic.min.js"></script>
+    <!-- <script src="${ STATIC_URL }homepage/media/semantic.min.js"></script> -->
+    <script src="${ STATIC_URL }homepage/media/bootstrap/js/bootstrap.min.js"></script>
 
 
     ## render the css with the same name as this page
     ${ get_template_css(self, request, context) }
+    <link rel="stylesheet" type="text/css" href="${ STATIC_URL }homepage/media/bootstrap/css/bootstrap.min.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="${ STATIC_URL }homepage/media/" />
-    <link rel="stylesheet" type="text/css" href="${ STATIC_URL }homepage/media/dist/semantic.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="${ STATIC_URL }homepage/media/semantic.min.css"> -->
   </head>
-  <body>
+  <body id="main-image">
 
     <div id="main_menu">
         <%block name="main_menu">
-          <div class="ui stackable menu">
-            <div class="item">
-              <i class="big book icon"></i>
+          <nav class="navbar navbar-default transparent white">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><span id="logo" class="glyphicon glyphicon-book"></span></a>
             </div>
-            <a class="item">Books</a>
-            <div class="right menu">
-              <div class="item">
-                <div class="ui icon input">
-                  <input type="text" placeholder="Search...">
-                  <i class="search link icon"></i>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Books<span class="sr-only">(current)</span></a></li>
+              </ul>
+              <form name="search" class="navbar-form right" role="search">
+                <div class="form-group">
+                  <input name="isearch" id="search-form" type="text" class="form-control hidden" placeholder="Search">
                 </div>
-              </div>
-              <a class="ui item">
-                Sign In
-              </a>
-              <a class="ui item">
-                Sign Up
-              </a>
-            </div>
-        </div>
+                <button id="search" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signup <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
         </%block>
     </div> <!--main_menu-->
 
